@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Archivo;
+  src:url("Archivo-Medium.ttf");
+}
+*{
+  font-family: Archivo, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  background-image: linear-gradient( 109.6deg,  rgba(15,2,2,1) 11.2%, rgba(36,163,190,1) 91.1% );
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  font-size: x-large;
+}
+button:hover{
+  color: #fa4659;
+  cursor: pointer;
+}
+
+.navlist{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+
+}
+
+.navlist li {
+  text-decoration: none;
+  list-style-type: none;
+}
+div.nav{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.mail{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin: 10px  10px  10px  10px;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 380px;
+  height: 508px;
+  flex-direction: column;
+  background: #f2f2f3;
+  border-radius: 12px;
+
+}
+
+.card:hover {
+  box-shadow: 0px 0px 13px 11px #0056ffff;
+}
+
+img {
+  border-radius: 50px;
+}
+
+.card .info {
+  text-align: center;
+  margin-top: .6em;
+  background: linear-gradient(120deg, rgba(0,194,255,1) 0%, rgba(0,86,255,1) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card .info > span {
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+.card .info p {
+  margin-top: .6em;
+}
+
+.card a {
+  margin-top: 4rem;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(90deg, rgba(0,194,255,1) 0%, rgba(0,86,255,1) 100%);
+  padding: .5em 2em;
+  border-radius: 50px;
+}
+
+.card a:active {
+  box-shadow: inset 6px 6px 6px #0056ff,
+  inset -6px -6px 6px #00c2ff;
+}
+
+
+@media screen and (min-width: 768px) {
+  card {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+  }
+}
+@media all and (min-width: 480px) {
+  .deskContent {display:block;}
+  .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+  .deskContent {display:none;}
+  .phoneContent {display:block;}
+}
+
+.mail {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
